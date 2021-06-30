@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_1sf_AP-3EemUpLNMetDGfg" name="UseCase">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_11SHkP-3EemUpLNMetDGfg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ACUjUP-4EemUpLNMetDGfg" name="Actor2"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GvXqIP-4EemUpLNMetDGfg" name="User">
+    <generalization xmi:type="uml:Generalization" xmi:id="_pPc9kP-5EemUpLNMetDGfg" general="_JdLUMP-4EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_JdLUMP-4EemUpLNMetDGfg" name="Cutomer Web"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_mudc8P-4EemUpLNMetDGfg" name="new User">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nV3lwP-5EemUpLNMetDGfg" general="_JdLUMP-4EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tQNSsP-4EemUpLNMetDGfg" name="">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8-w2QP-4EemUpLNMetDGfg" name="Search Wine">
+      <include xmi:type="uml:Include" xmi:id="_0C248P-9EemUpLNMetDGfg" addition="_rETmYP-5EemUpLNMetDGfg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JG00QP-5EemUpLNMetDGfg" name="Register"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VY3NoP-5EemUpLNMetDGfg" name="Login">
+      <extend xmi:type="uml:Extend" xmi:id="_0W_AwP-7EemUpLNMetDGfg" extendedCase="_k2EQkP-7EemUpLNMetDGfg" extensionLocation="_0XEgUP-7EemUpLNMetDGfg"/>
+      <include xmi:type="uml:Include" xmi:id="_GF7kMP-7EemUpLNMetDGfg" addition="__KiU0P-5EemUpLNMetDGfg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rETmYP-5EemUpLNMetDGfg" name="ProwideWine"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__KiU0P-5EemUpLNMetDGfg" name="Authentic login">
+      <include xmi:type="uml:Include" xmi:id="_1bmU4P-6EemUpLNMetDGfg" addition="_VY3NoP-5EemUpLNMetDGfg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k2EQkP-7EemUpLNMetDGfg" name="byWine">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_0XEgUP-7EemUpLNMetDGfg" name="ExtensionPoint1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MTsjcP-6EemUpLNMetDGfg" memberEnd="_MUJPYP-6EemUpLNMetDGfg _MUJPYf-6EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MUAFcP-6EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MUAFcf-6EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MUJPYP-6EemUpLNMetDGfg" name="user" type="_mudc8P-4EemUpLNMetDGfg" association="_MTsjcP-6EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MUJPYf-6EemUpLNMetDGfg" name="register" type="_JG00QP-5EemUpLNMetDGfg" association="_MTsjcP-6EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ee_PMP-6EemUpLNMetDGfg" memberEnd="_ee_PM_-6EemUpLNMetDGfg _ee_PNP-6EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ee_PMf-6EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ee_PMv-6EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ee_PM_-6EemUpLNMetDGfg" name="register" type="_JG00QP-5EemUpLNMetDGfg" association="_ee_PMP-6EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ee_PNP-6EemUpLNMetDGfg" name="employe" type="_GvXqIP-4EemUpLNMetDGfg" association="_ee_PMP-6EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i8QrwP-6EemUpLNMetDGfg" memberEnd="_i8Qrw_-6EemUpLNMetDGfg _i8QrxP-6EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i8Qrwf-6EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i8Qrwv-6EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i8Qrw_-6EemUpLNMetDGfg" name="search wine" type="_8-w2QP-4EemUpLNMetDGfg" association="_i8QrwP-6EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i8QrxP-6EemUpLNMetDGfg" name="user" type="_mudc8P-4EemUpLNMetDGfg" association="_i8QrwP-6EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cL7VgP-8EemUpLNMetDGfg" name="authentic login" memberEnd="_cL7Vg_-8EemUpLNMetDGfg _cL7VhP-8EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cL7Vgf-8EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cL7Vgv-8EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cL7Vg_-8EemUpLNMetDGfg" name="login" type="_VY3NoP-5EemUpLNMetDGfg" association="_cL7VgP-8EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cL7VhP-8EemUpLNMetDGfg" name="user" type="_GvXqIP-4EemUpLNMetDGfg" association="_cL7VgP-8EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_iEBKQP-8EemUpLNMetDGfg" name="new Employe"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oTVMMP-8EemUpLNMetDGfg" memberEnd="_oTVMM_-8EemUpLNMetDGfg _oTVMNP-8EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oTVMMf-8EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oTVMMv-8EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oTVMM_-8EemUpLNMetDGfg" name="register" type="_JG00QP-5EemUpLNMetDGfg" association="_oTVMMP-8EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oTVMNP-8EemUpLNMetDGfg" name="employe" type="_iEBKQP-8EemUpLNMetDGfg" association="_oTVMMP-8EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_uylHkP-8EemUpLNMetDGfg" name="Employe"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0HhzAP-8EemUpLNMetDGfg" memberEnd="_0HrkAP-8EemUpLNMetDGfg _0HrkAf-8EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0HhzAf-8EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0HhzAv-8EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0HrkAP-8EemUpLNMetDGfg" name="prowidewine" type="_rETmYP-5EemUpLNMetDGfg" association="_0HhzAP-8EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0HrkAf-8EemUpLNMetDGfg" name="prowidewine" type="_rETmYP-5EemUpLNMetDGfg" association="_0HhzAP-8EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2BNRcP-8EemUpLNMetDGfg" memberEnd="_2BNRc_-8EemUpLNMetDGfg _2BNRdP-8EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2BNRcf-8EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2BNRcv-8EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2BNRc_-8EemUpLNMetDGfg" name="login" type="_VY3NoP-5EemUpLNMetDGfg" association="_2BNRcP-8EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2BNRdP-8EemUpLNMetDGfg" name="employe" type="_uylHkP-8EemUpLNMetDGfg" association="_2BNRcP-8EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9aoWEP-8EemUpLNMetDGfg" name="Employe web">
+    <generalization xmi:type="uml:Generalization" xmi:id="_JxQ7kP-9EemUpLNMetDGfg" general="_uylHkP-8EemUpLNMetDGfg"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_KefN8P-9EemUpLNMetDGfg" general="_iEBKQP-8EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F0ztEP-9EemUpLNMetDGfg" memberEnd="_F083Av-9EemUpLNMetDGfg _F083A_-9EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F083AP-9EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F083Af-9EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F083Av-9EemUpLNMetDGfg" name="employe" type="_uylHkP-8EemUpLNMetDGfg" association="_F0ztEP-9EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F083A_-9EemUpLNMetDGfg" name="employe web" type="_9aoWEP-8EemUpLNMetDGfg" association="_F0ztEP-9EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GhTmsP-9EemUpLNMetDGfg" memberEnd="_GhTms_-9EemUpLNMetDGfg _GhTmtP-9EemUpLNMetDGfg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GhTmsf-9EemUpLNMetDGfg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GhTmsv-9EemUpLNMetDGfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GhTms_-9EemUpLNMetDGfg" name="new employe" type="_iEBKQP-8EemUpLNMetDGfg" association="_GhTmsP-9EemUpLNMetDGfg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GhTmtP-9EemUpLNMetDGfg" name="employe web" type="_9aoWEP-8EemUpLNMetDGfg" association="_GhTmsP-9EemUpLNMetDGfg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_NJ2oAP-9EemUpLNMetDGfg" client="_uylHkP-8EemUpLNMetDGfg" supplier="_rETmYP-5EemUpLNMetDGfg"/>
+</uml:Model>
