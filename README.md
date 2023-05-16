@@ -1,2 +1,2 @@
-# java_project
+# java_project is easy
 there is always the a first time
